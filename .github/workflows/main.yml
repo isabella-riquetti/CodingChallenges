@@ -19,7 +19,7 @@ jobs:
 
     env:
       Solution_Name: CrackingTheCodingInterview.sln
-      Test_Project_Path: CrakingTheCodingInterview.Tests\CrakingTheCodingInterview.Tests.csproj
+      Test_Project_Path: CrackingTheCodingInterview.Tests\CrackingTheCodingInterview.Tests.csproj
       
     steps:
     - name: Checkout
@@ -50,7 +50,7 @@ jobs:
       uses: coverallsapp/github-action@master   
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }} 
-        path-to-lcov: CrakingTheCodingInterview.Tests/TestResults/coverage.info 
+        path-to-lcov: CrackingTheCodingInterview.Tests/TestResults/coverage.info 
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
