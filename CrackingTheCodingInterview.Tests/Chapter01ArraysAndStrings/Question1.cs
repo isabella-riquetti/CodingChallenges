@@ -1,4 +1,4 @@
-﻿using CrackingTheCodeInterview.Chapter1ArraysAndStrings.Question1;
+﻿using CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;

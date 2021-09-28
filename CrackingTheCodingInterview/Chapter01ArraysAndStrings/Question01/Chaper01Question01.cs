@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CrackingTheCodeInterview.Chapter1ArraysAndStrings.Question1
+namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
 {
     public static class Chaper01Question01
 	{
