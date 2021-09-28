@@ -1,5 +1,6 @@
-﻿using CrackingTheCodeInterview.Chapter_1___Arrays_and_Strings.Question_1;
+﻿using CrackingTheCodeInterview.Chapter1ArraysAndStrings.Question1;
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Xunit;
 
@@ -9,31 +10,30 @@ namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
     {
         [Theory]
         [MemberData(nameof(OnlyUniqueCharactersTests))]
-        public void Solution1HashSet(OnlyUniqueCharactersTestInput test)
+        public void Solution1HashSetTest(OnlyUniqueCharactersTestInput test)
         {
-            var result = Chaper1Question1.Solution1HashSet(test.InputText);
+            var result = Chaper01Question01.Solution1HashSet(test.InputText);
 
             Assert.Equal(test.ExpectedResult, result);
         }
 
         [Theory]
         [MemberData(nameof(OnlyUniqueCharactersTests))]
-        public void Solution2BoolList(OnlyUniqueCharactersTestInput test)
+        public void Solution2BoolListTest(OnlyUniqueCharactersTestInput test)
         {
-            var result = Chaper1Question1.Solution2BoolList(test.InputText);
+            var result = Chaper01Question01.Solution2BoolList(test.InputText);
 
             Assert.Equal(test.ExpectedResult, result);
         }
                 
         [Theory]
         [MemberData(nameof(OnlyUniqueCharactersTests))]
-        public void Solution3NoAdditionalStructure(OnlyUniqueCharactersTestInput test)
+        public void Solution3BruteForceNoAdditionalDataStructureTest(OnlyUniqueCharactersTestInput test)
         {
-            var result = Chaper1Question1.Solution3NoAdditionalStructure(test.InputText);
+            var result = Chaper01Question01.Solution3BruteForceNoAdditionalDataStructure(test.InputText);
 
             Assert.Equal(test.ExpectedResult, result);
         }
-
 
         public static TheoryData<OnlyUniqueCharactersTestInput> OnlyUniqueCharactersTests = new TheoryData<OnlyUniqueCharactersTestInput>
         {
@@ -81,6 +81,7 @@ namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
             }
         };
 
+        [ExcludeFromCodeCoverage]
         public class OnlyUniqueCharactersTestInput
         {
             public string Name { get; set; }

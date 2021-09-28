@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CrackingTheCodeInterview\CrackingTheCodeInterview.csproj" />
+    <ProjectReference Include="..\CrakingTheCodingInterview\CrakingTheCodingInterview.csproj" />
   </ItemGroup>
 
 </Project>
