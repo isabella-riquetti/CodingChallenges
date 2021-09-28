@@ -39,8 +39,11 @@ jobs:
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
-      run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
-  
+      run: dotnet test CrakingTheCodeInterview.Test/CrakingTheCodeInterview.Test.csproj
+        /p:CollectCoverage=true
+        /p:CoverletOutput=TestResults/
+        /p:CoverletOutputFormat=lcov
+    
     # Test coverage
     - name: Publish coverage report to coveralls.io   
       uses: coverallsapp/github-action@master   
