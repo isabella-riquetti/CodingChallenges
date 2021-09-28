@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
 {
@@ -53,6 +54,52 @@ namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
 						return false;
 				}
 			}
+
+			return true;
+		}
+
+		// Only possible for letters and numbers
+		public static bool Solution4Bitwise(string text)
+		{
+			long checker = 0;
+			for (int i = 0; i < text.Length; i++)
+			{
+				// Check for lower case
+				if (text[i] >= 'a' && text[i] <= 'z')
+				{
+					// Get lower case index
+					int charInt = text[i] - 'a';
+					if ((checker & (1 << charInt)) > 0)
+						return false;
+
+                    checker |= 1 << charInt;
+				}
+				// Check for upper case
+				else if(text[i] >= 'A' && text[i] <= 'Z')
+				{
+					// Get upper case index and adds maximum of lower case
+					int charInt = text[i] - 'A' + 'z'-'a';
+					if ((checker & (1 << charInt)) > 0)
+						return false;
+
+					checker |= 1 << charInt;
+				}
+				// Check for numbers
+				else if (text[i] >= '0' && text[i] <= '9')
+				{
+					// Get number index and adds letters
+					int charInt = text[i] - '0' + 'z' - 'a' + 'Z' - 'A';
+					if ((checker & (1 << charInt)) > 0)
+						return false;
+
+					checker |= 1 << charInt;
+				}
+                else
+                {
+					throw new Exception("Invalid character");
+                }
+			}
+
 
 			return true;
 		}

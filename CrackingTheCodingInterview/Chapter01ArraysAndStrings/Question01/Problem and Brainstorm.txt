@@ -60,3 +60,6 @@ public bool CheckForUniqueCharacter(string text) {
 
 -------------------
 Pending: Using bitwise operation page 193
+
+The solution provided only allowed lower case letters, but were not checking for it
+We can allow upper and lower letters as well as numbers since all they are less than 64 that is the limit for the left operator

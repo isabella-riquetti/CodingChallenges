@@ -35,6 +35,22 @@ namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
             Assert.Equal(test.ExpectedResult, result);
         }
 
+        [Theory]
+        [MemberData(nameof(OnlyUniqueCharactersTestsNoSymbols))]
+        public void Solution4BitwiseTest(OnlyUniqueCharactersTestInput test)
+        {
+            if (test.ExpectedException)
+            {
+                Assert.Throws<Exception>(() => Chaper01Question01.Solution4Bitwise(test.InputText));
+            }
+            else
+            {
+                var result = Chaper01Question01.Solution4Bitwise(test.InputText);
+                Assert.Equal(test.ExpectedResult, result);
+            }
+
+        }
+
         public static TheoryData<OnlyUniqueCharactersTestInput> OnlyUniqueCharactersTests = new TheoryData<OnlyUniqueCharactersTestInput>
         {
             new OnlyUniqueCharactersTestInput()
@@ -81,12 +97,54 @@ namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
             }
         };
 
+        public static TheoryData<OnlyUniqueCharactersTestInput> OnlyUniqueCharactersTestsNoSymbols = new TheoryData<OnlyUniqueCharactersTestInput>
+        {
+            new OnlyUniqueCharactersTestInput()
+            {
+                Name = "Basic lower",
+                InputText = "az",
+                ExpectedResult = true
+            },
+            new OnlyUniqueCharactersTestInput()
+            {
+                Name = "Basic upper",
+                InputText = "AXZ",
+                ExpectedResult = true
+            },
+            new OnlyUniqueCharactersTestInput()
+            {
+                Name = "Basic number",
+                InputText = "0123456789",
+                ExpectedResult = true
+            },
+            new OnlyUniqueCharactersTestInput()
+            {
+                Name = "Mixed, valid",
+                InputText = "4bCd3aBcDe",
+                ExpectedResult = true
+            },
+            new OnlyUniqueCharactersTestInput()
+            {
+                Name = "Invalid",
+                InputText = "4bCd3aBcDeEE",
+                ExpectedResult = false
+            },
+            new OnlyUniqueCharactersTestInput()
+            {
+                Name = "Exception",
+                InputText = "*&#!@&)!",
+                ExpectedResult = false,
+                ExpectedException = true
+            }
+        };
+
         [ExcludeFromCodeCoverage]
         public class OnlyUniqueCharactersTestInput
         {
             public string Name { get; set; }
             public string InputText { get; set; }
             public bool ExpectedResult { get; set; }
+            public bool ExpectedException { get; set; }
         }
     }
 }
