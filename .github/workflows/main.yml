@@ -18,7 +18,7 @@ jobs:
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
     env:
-      Solution_Name: CrackingTheCodeInterview.sln
+      Solution_Name: CrackingTheCodingInterview.sln
       Test_Project_Path: CrakingTheCodingInterview.Tests\CrakingTheCodingInterview.Tests.csproj
       
     steps:
