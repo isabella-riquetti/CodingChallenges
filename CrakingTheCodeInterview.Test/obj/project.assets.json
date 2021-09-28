@@ -1677,6 +1677,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "CrakingTheCodingInterview/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CrakingTheCodingInterview.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrakingTheCodingInterview.dll": {}
+        }
       }
     }
   },
@@ -5972,10 +5982,16 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "CrakingTheCodingInterview/1.0.0": {
+      "type": "project",
+      "path": "../CrakingTheCodingInterview/CrakingTheCodingInterview.csproj",
+      "msbuildProject": "../CrakingTheCodingInterview/CrakingTheCodingInterview.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CrakingTheCodingInterview >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "coverlet.collector >= 3.0.2",
       "coverlet.msbuild >= 3.1.0",
@@ -5990,9 +6006,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodeInterview.Test\\CrakingTheCodeInterview.Test.csproj",
-      "projectName": "CrakingTheCodeInterview.Test",
-      "projectPath": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodeInterview.Test\\CrakingTheCodeInterview.Test.csproj",
+      "projectUniqueName": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodeInterview.Test\\CrakingTheCodingInterview.Tests.csproj",
+      "projectName": "CrakingTheCodingInterview.Tests",
+      "projectPath": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodeInterview.Test\\CrakingTheCodingInterview.Tests.csproj",
       "packagesPath": "C:\\Users\\isabe\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodeInterview.Test\\obj\\",
       "projectStyle": "PackageReference",
@@ -6013,7 +6029,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodingInterview\\CrakingTheCodingInterview.csproj": {
+              "projectPath": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodingInterview\\CrakingTheCodingInterview.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

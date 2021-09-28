@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eojGE3V2T9d32mzK8uyEt2lG8wvyRQBJgDNIaDoPA/uVGQn3R1B5uBLglrRYz9hqb5D1pS6RmnlwT72Je+gyyA==",
+  "dgSpecHash": "06TkbI4lwSd+lJv3JZVDy7wUJ/71YROVTahau6OHER7vIrWv5U3mqWPQsX24k6u4/gf3oMR7Dm4858cbrTGyIQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodeInterview.Test\\CrakingTheCodeInterview.Test.csproj",
+  "projectFilePath": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodeInterview.Test\\CrakingTheCodingInterview.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\isabe\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\isabe\\.nuget\\packages\\coverlet.msbuild\\3.1.0\\coverlet.msbuild.3.1.0.nupkg.sha512",
