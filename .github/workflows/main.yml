@@ -19,7 +19,7 @@ jobs:
 
     env:
       Solution_Name: CrackingTheCodeInterview.sln
-      Test_Project_Path: CrakingTheCodingInterview.Test\CrakingTheCodingInterview.Test.csproj
+      Test_Project_Path: CrakingTheCodingInterview.Tests\CrakingTheCodingInterview.Tests.csproj
       
     steps:
     - name: Checkout
