@@ -39,12 +39,17 @@ jobs:
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
-      run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
-  
+      run: dotnet test
+        -f:net5.0
+        -p:CollectCoverage=true
+        -p:CoverletOutputFormat=lcov
+        -p:CoverletOutput=TestResults/
+    
     # Test coverage
     - name: Publish coverage report to coveralls.io   
       uses: coverallsapp/github-action@master   
       with:
+        github-token: ${{ secrets.GITHUB_TOKEN }} 
         path-to-lcov: CrakingTheCodeInterview.Test/TestResults/coverage.info 
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
