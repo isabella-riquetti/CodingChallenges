@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3RnsQXNef6IfknfzetpAjHCRH59rBCneBBxauqYG0brB3FiMz6o4LhPf/pjXramogEgezV1PpjHxcrj7y7XanQ==",
+  "dgSpecHash": "zlr0ZOY+imkwaealOkr1hOBfUY7z/uVXZt9zJiQTXO2+ZUtwP2MiEmQ6Ap4ChQbgsJ7VGtE0lss/yj8ZAoQhPQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Personal\\CrackingTheCodeInterview\\CrakingTheCodeInterview.Test\\CrakingTheCodeInterview.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\isabe\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
+    "C:\\Users\\isabe\\.nuget\\packages\\coverlet.msbuild\\3.1.0\\coverlet.msbuild.3.1.0.nupkg.sha512",
     "C:\\Users\\isabe\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
     "C:\\Users\\isabe\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\isabe\\.nuget\\packages\\microsoft.net.test.sdk\\16.9.4\\microsoft.net.test.sdk.16.9.4.nupkg.sha512",
