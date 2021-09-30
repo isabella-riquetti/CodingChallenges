@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
 {
-    public static class Chaper01Question01
+    public static class Chaper01Question02
     {
         public static bool Solution1HashSet(string text)
         {
