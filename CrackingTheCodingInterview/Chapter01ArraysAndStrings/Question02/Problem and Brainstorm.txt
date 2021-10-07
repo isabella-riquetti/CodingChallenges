@@ -6,22 +6,125 @@
 
 First obvious solution is brute forcing, get the smaller string and keep poping the last char and adding at the begging and checking if it's part of the bigger string.
 
+// Missunderstanding
+//public static bool Check(string strA, string strB)
+//{
+//	bool firstIsBigger = strA.Length > strB.Length;
+//	string str1 = firstIsBigger ? strA : strB;
+//	string str2 = !firstIsBigger ? strA : strB;
+//
+//	for(int i = 0; i < str2.Length; i++)
+//	{
+//		char lastChar = str2[str2.Lenght-1];
+//		str2 = lastChar + str2.Substring(str2.Lenght-2, 1);
+//		if(str1.Contains(str2))
+//		{
+//			return true;
+//		}
+//	}
+//
+//	return false;
+//}
+//
+//public static bool Check(string strA, string strB)
+//{
+//
+//	for(int i = 0; i < strA.Length; i++)
+//	{
+//		if(strA == strB) {
+//			return true;
+//		}
+//
+//		char tmp = strA[0];
+//		strA = strA.RemoveAt(0);
+//		strA += char;
+//	}
+//
+//	return false;
+//}
 
-public static bool Check(string strA, string strB)
+//No using libraries but accepting any char 
+public static bool Solution1(string strA, string strB)
 {
-	bool firstIsBigger = strA.Length > strB.Length;
-	string str1 = firstIsBigger ? strA : strB;
-	string str2 = !firstIsBigger ? strA : strB;
+	if(strA.Length != strb.Lenght)
+		return false;
 
-	for(int i = 0; i < str2.Length; i++)
-	{
-		char lastChar = str2[str2.Lenght-1];
-		str2 = lastChar + str2.Substring(str2.Lenght-2, 1);
-		if(str1.Contains(str2))
-		{
-			return true;
-		}
+	var counterA = new int[bigint.MaxValue];
+	var counterB = new int[bigint.MaxValue];
+	for(int i = 0; i < strA.Length; i++) {
+		counterA[(int)strA[i]]++;
+		counterB[(int)strB[i]]++;
 	}
 
-	return false;
+	if(counterA == counterB) // This won't work unless I use a for loop → No viable
+		return true;
+}
+
+
+//No library
+public static bool Solution1(string strA, string strB)
+{
+	if(strA.Length != strb.Lenght)
+		return false;
+
+	var counterA = new int[128]; // ASCII
+	var counterB = new int[128]; // ASCII
+	for(int i = 0; i < counterA.Length; i++) {
+		counterA[(int)strA[i]]++;
+		counterB[(int)strB[i]]++;
+	}
+
+	for(int i = 0; i < counterA.Length; i++) {
+		if(counterA[i] != counterB[i])
+			return false;
+	}
+	
+	return true;
+}
+
+//No library - optimized
+public static bool Solution2(string strA, string strB)
+{
+	if(strA.Length != strb.Lenght)
+		return false;
+
+	var counter = new int[128]; // ASCII
+	for(int i = 0; i < strA.Length; i++) {
+		counterA[(int)strA[i]]++;
+		counterB[(int)strB[i]]--;
+	}
+
+	for(int i = 0; i < counter.Length; i++) {
+		if(counter[i] != 0)
+			return false;
+	}
+	
+	return true;
+}
+
+//HashMap → Maybe optimize space
+public static bool Solution3(string strA, string strB)
+{
+	if(strA.Length != strb.Lenght)
+		return false;
+
+	var dict = new Dictionary<char, int>();
+	for(int i = 0; i < strA.Length; i++) {
+		if(!dict.ContainsKey(strA[i])) {
+			dict.Add(strA[i], 0);
+		}
+		if(!dict.ContainsKey(strB[i])) {
+			dict.Add(strB[i], 0);
+		}
+		dict[strA[i]]++;
+		dict[strB[i]]--;
+	}
+	
+	var values = dict.Value;
+	for(int i = 0; i < dict.Length; i++) {
+		if(values[i] != 0)
+			return false;
+	}
+	
+	return true;
 }
