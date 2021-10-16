@@ -114,7 +114,7 @@ namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
 			return dict.Count == 0;
 		}
 
-		//Sort → Maybe optimize+ O(n)
+		//Sort → O(n)
 		public static bool Solution4(string strA, string strB)
 		{
 			if (strA.Length != strB.Length)
@@ -126,7 +126,6 @@ namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
 			Array.Sort(arrA);
 			Array.Sort(arrB);
 
-			var dict = new Dictionary<char, int>();
 			for (int i = 0; i < arrA.Length; i++)
 			{
 				if (arrA[i] != arrB[i])

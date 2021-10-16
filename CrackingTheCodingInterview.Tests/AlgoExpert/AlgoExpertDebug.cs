@@ -4,7 +4,7 @@ using static CrackingTheCodingInterview.AlgoExpert.Hard1ShiftLinkedList;
 
 namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
 {
-    public class QuestionRiver
+    public class AlgoExpertDebug
     {
         [Fact]
         // Just to debug, I can use AlgoExpert platform to test
