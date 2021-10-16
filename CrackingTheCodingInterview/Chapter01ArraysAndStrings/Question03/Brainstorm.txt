@@ -1,0 +1,24 @@
+﻿1.2 Urlfy string (removing leading and trailing spaces)
+
+//Hardcoded → Iterate over → Replace spaces → But flag end and start
+
+func(x) {
+	bool started = false;
+	bool foundNonSpace = false;
+	string formatedString = "";
+	string currentConcat = ""; // To avoid adding spaces at the end
+	for(int i = 0; i < x.Lenght; i++) {
+		if(x[i] != '') {
+			started = true;
+			foundNonSpace = true;
+			currentConcat += x[i];
+			formatedString += currentConcat;
+			currentConcat = "";
+		}
+		else if(started) {
+			currentConcat += "%20";
+		}
+	}
+	
+	return formatedString;
+}
