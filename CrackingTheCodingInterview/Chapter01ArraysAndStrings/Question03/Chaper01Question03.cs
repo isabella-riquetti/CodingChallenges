@@ -63,5 +63,34 @@ namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
             strBuilder.Replace(" ", "%20");
             return strBuilder.ToString();
         }
+
+        //Book approach first try, Time O(1), Space O(1)
+        public static string Solution6(string text)
+        {
+            text = text.Trim();
+            int spaceCount = 0;
+            for (int i = 0; i < text.Length; i++)
+                if (text[i] == ' ')
+                    spaceCount++;
+
+            char[] chars = new char[text.Length+(2*spaceCount)];
+            int charPos = chars.Length - 1;
+            for (int i = text.Length-1; i >= 0; i--)
+            {
+                if(text[i] == ' ')
+                {
+                    chars[charPos] = '0';
+                    chars[--charPos] = '2';
+                    chars[--charPos] = '%';
+                }
+                else
+                {
+                    chars[charPos] = text[i];
+                }
+                charPos--;
+            }
+
+            return string.Join("", chars);
+        }
     }
 }

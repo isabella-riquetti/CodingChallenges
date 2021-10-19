@@ -51,6 +51,15 @@ namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
             Assert.Equal(test.ExpecteResult, result);
         }
 
+        [Theory]
+        [MemberData(nameof(UrlfyTests))]
+        public void Solution6(UrlfyTestInput test)
+        {
+            var result = Chaper01Question03.Solution6(test.Text);
+
+            Assert.Equal(test.ExpecteResult, result);
+        }
+
 
         public static TheoryData<UrlfyTestInput> UrlfyTests = new TheoryData<UrlfyTestInput>
         {
