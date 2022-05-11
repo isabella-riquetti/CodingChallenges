@@ -3,13 +3,13 @@ using Xunit;
 
 namespace CrakingTheCodeInterview.Test.LeetCode
 {
-    public class Question278
+    public class Question0278
     {
         [Theory]
         [MemberData(nameof(FirstBadVersionTests))]
         public void Solution1(FirstBadVersionTestInput test)
         {
-            var result = CrackingTheCodingInterview.LeetCode.Question278.Resolution.FirstBadVersion(test.Max, test.FirstBad);
+            var result = CrackingTheCodingInterview.LeetCode.Question0278.Resolution.FirstBadVersion(test.Max, test.FirstBad);
 
             Assert.Equal(test.FirstBad, result);
         }

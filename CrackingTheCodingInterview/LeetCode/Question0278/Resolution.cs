@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 
-namespace CrackingTheCodingInterview.LeetCode.Question278
+namespace CrackingTheCodingInterview.LeetCode.Question0278
 {
     public static class Resolution
     {

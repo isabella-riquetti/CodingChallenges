@@ -3,35 +3,18 @@ using Xunit;
 
 namespace CrakingTheCodeInterview.Test.LeetCode
 {
-    public class Question48
+    public class Question0048
     {
         [Theory]
-        [MemberData(nameof(RoutateMatrixTests))]
-        public void Solution1(RotateMatrixTestInput test)
-        {
-            var result = CrackingTheCodingInterview.LeetCode.Question48.Resolution.Solution1(test.Value);
-            
-            Assert.Equal(test.ExpecteResult, result);
-        }
-        [Theory]
-        [MemberData(nameof(RoutateMatrixTests))]
-        public void Solution2(RotateMatrixTestInput test)
-        {
-            var result = CrackingTheCodingInterview.LeetCode.Question48.Resolution.Solution2(test.Value);
-
-            Assert.Equal(test.ExpecteResult, result);
-        }
-        [Theory]
-        [MemberData(nameof(RoutateMatrixTests))]
+        [MemberData(nameof(RotateMatrixTests))]
         public void Solution3(RotateMatrixTestInput test)
         {
-            var result = CrackingTheCodingInterview.LeetCode.Question48.Resolution.Solution3(test.Value);
+            var result = CrackingTheCodingInterview.LeetCode.Question0048.Resolution.Solution3(test.Value);
 
             Assert.Equal(test.ExpecteResult, result);
         }
 
-
-        public static TheoryData<RotateMatrixTestInput> RoutateMatrixTests = new TheoryData<RotateMatrixTestInput>
+        public static TheoryData<RotateMatrixTestInput> RotateMatrixTests = new TheoryData<RotateMatrixTestInput>
         {
             new RotateMatrixTestInput()
             {
