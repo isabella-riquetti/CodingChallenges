@@ -1,10 +1,10 @@
-﻿using CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1;
+﻿using CrackingTheCodingInterview.Chapter01ArraysAndStrings.Question03;
 using System.Diagnostics.CodeAnalysis;
 using Xunit;
 
-namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
+namespace CrackingTheCodingInterview.Tests.Chapter01ArraysAndStrings
 {
-    public class Question3
+    public class Question03
     {
         [Theory]
         [MemberData(nameof(UrlfyTests))]

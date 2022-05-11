@@ -2,7 +2,7 @@
 using Xunit;
 using static CrackingTheCodingInterview.AlgoExpert.Hard1ShiftLinkedList;
 
-namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
+namespace CrakingTheCodeInterview.Test.AlgoExpert
 {
     public class AlgoExpertDebug
     {

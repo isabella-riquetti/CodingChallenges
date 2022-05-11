@@ -1,9 +1,5 @@
-﻿1.1 implement an algorithm to determine if a string has all unique characters.
-What if you cannot use additional data structures?
-
-What is the character encoding?		I'll use ASCII
+﻿What is the character encoding?		I'll use ASCII
 Empty array?						Should return false
-
 
 I can use one hasmap to save all seen character and check if the character is present in the hash, if it is, return false, if it's not keep going.
 

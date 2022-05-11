@@ -1,10 +1,4 @@
-﻿1.2 Given two strings write a method to decidde if one is a permutation of the other.
-#1 - Describe what it means for two string be a permutation of each other. Now, look at that definition you provided. Can you check the string agains that definition?
-#84 - There's one solution that is O(N log N) time. Another solution uses some space, but is O(n) time.
-#122 - Could a hash table be useful?
-#131 - Two strings that are permutation should have the same characteres, but in different orders. Can you make the orders the same?
-
-First obvious solution is brute forcing, get the smaller string and keep poping the last char and adding at the begging and checking if it's part of the bigger string.
+﻿First obvious solution is brute forcing, get the smaller string and keep poping the last char and adding at the begging and checking if it's part of the bigger string.
 
 // Missunderstanding
 //public static bool Check(string strA, string strB)

@@ -1,8 +1,0 @@
-﻿1.2 Palindrome permutation
-
-Solution 1: Compare i with Length - i
-
-
-bool funct(string text) {
-	Dictionary<char, int
-}

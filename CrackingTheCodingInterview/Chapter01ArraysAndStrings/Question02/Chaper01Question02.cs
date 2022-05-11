@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
+namespace CrackingTheCodingInterview.Chapter01ArraysAndStrings.Question02
 {
     public static class Chaper01Question02
     {

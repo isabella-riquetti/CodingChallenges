@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
+namespace CrackingTheCodingInterview.Chapter01ArraysAndStrings.Question03
 {
     public static class Chaper01Question03
     {

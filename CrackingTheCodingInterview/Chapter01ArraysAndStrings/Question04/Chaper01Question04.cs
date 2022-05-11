@@ -1,34 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1
+namespace CrackingTheCodingInterview.Chapter01ArraysAndStrings.Question04
 {
     public static class Chaper01Question04
     {
-        ////Time O(n), Space O(1)
-        //public static bool Solution1(string text)
-        //{
-        //    int half = Convert.ToInt32(Math.Floor(text.Length / 2.0));
-        //    for (int i = 0; i < half; i++)
-        //    {
-        //        if (text[i] != text[text.Length - i])
-        //            return false;
-        //    }
-
-        //    return true;
-
-        //}
-
         public static bool Solution1(string text)
         {
-            int half = Convert.ToInt32(Math.Floor(text.Length / 2.0));
-            for (int i = 0; i < half; i++)
+            var hashSet = new HashSet<char>();
+            text = text.Replace(" ", String.Empty).ToLower();
+            for (int i = 0; i < text.Length; i++)
             {
-                if (text[i] != text[text.Length - i])
-                    return false;
+                if (hashSet.Contains(text[i]))
+                {
+                    hashSet.Remove(text[i]);
+                }
+                else
+                {
+                    hashSet.Add(text[i]);
+                }
             }
 
-            return true;
-
+            if (text.Length % 2 == 0)
+            {
+                return hashSet.Count == 0;
+            }
+            return hashSet.Count == 1;
         }
     }
 }

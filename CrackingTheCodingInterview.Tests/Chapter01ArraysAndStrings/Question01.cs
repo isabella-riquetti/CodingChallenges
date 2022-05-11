@@ -1,12 +1,12 @@
-﻿using CrackingTheCodingInterview.Chapter1ArraysAndStrings.Question1;
+﻿using CrackingTheCodingInterview.Chapter01ArraysAndStrings.Question01;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Xunit;
 
-namespace CrakingTheCodeInterview.Test.Chapter_1___Arrays_and_String
+namespace CrackingTheCodingInterview.Tests.Chapter01ArraysAndStrings
 {
-    public class Question1
+    public class Question01
     {
         [Theory]
         [MemberData(nameof(OnlyUniqueCharactersTests))]

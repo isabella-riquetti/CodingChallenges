@@ -1,0 +1,2 @@
+﻿Solution 1: If it has even number of characteres, all of them should have a pair, otherwise, it can only have one character that does not has a pair
+I can use a hashset to store the characters, and once I find a pair, a simply remove the char of the hash. By the end we only need to check the size of the hashset

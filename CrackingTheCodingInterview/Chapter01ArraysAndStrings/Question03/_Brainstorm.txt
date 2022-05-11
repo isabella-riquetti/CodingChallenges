@@ -1,6 +1,4 @@
-﻿1.2 Urlfy string (removing leading and trailing spaces)
-
-//Hardcoded → Iterate over → Replace spaces → But flag end and start
+﻿//Hardcoded → Iterate over → Replace spaces → But flag end and start
 
 func(x) {
 	bool started = false;
