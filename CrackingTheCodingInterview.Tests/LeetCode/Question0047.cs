@@ -16,6 +16,15 @@ namespace CrakingTheCodeInterview.Test.LeetCode
             test.ExpecteResult.Should().BeEquivalentTo(result);
         }
 
+        [Theory]
+        [MemberData(nameof(PermutationsNoRepetitionsTests))]
+        public void Solution2(PermutationsNoRepetitionsTestInput test)
+        {
+            var result = CrackingTheCodingInterview.LeetCode.Question0047.Resolution.Solution2(test.Value);
+
+            test.ExpecteResult.Should().BeEquivalentTo(result);
+        }
+
         public static TheoryData<PermutationsNoRepetitionsTestInput> PermutationsNoRepetitionsTests = new TheoryData<PermutationsNoRepetitionsTestInput>
         {
             new PermutationsNoRepetitionsTestInput()
