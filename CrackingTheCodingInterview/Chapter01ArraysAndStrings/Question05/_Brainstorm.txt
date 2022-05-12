@@ -1,0 +1,42 @@
+﻿Solution 1:
+If the two strings have different size by one, then it's possible is a insert or delete
+If the second has more characters, we start to check both indexes at the same rate.
+But if we find anything different, we start to check the bigger string at +1 index
+If the second string is smaller, we apply the same logic, but we don't add the index one
+So by the end, if we arrive at the end of the string with no more differences, they are one edit away
+
+For modificiation, we can check if they are the same size, if they are we allow one difference
+at the same index. More than one returns false
+
+
+bigger = text2.Length > 0 ? text2 : text1;
+smaller = text2.Length <= 0 ? text2 : text1;
+if(bigger - smaller > 1)
+{
+	return false;
+}
+else if(text.Length == text2.Length)
+{
+	replaced = true;
+}
+
+int differences = 0;
+for(int i = 0; i < bigger.Length; i++)
+{
+	bool isEqual = bigger[i+differences] == smaller[i];
+	if(!isEqual && differences == 0)
+	{
+		if(!replaced)
+		{
+			differences++;
+		}
+	}
+	else if(!isEqual)
+	{
+		return false;
+	}
+}
+
+return true;
+
+// TOO MANY IFS! ↑
