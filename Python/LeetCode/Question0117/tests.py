@@ -19,13 +19,7 @@ def asserts(node,expectedNode):
     if node.next is not None or expectedNode.next is not None:
         assert node.next.val == expectedNode.next.val
 
-node7 = Node(7)
-node6 = Node(6)
-node5 = Node(5)
-node4 = Node(4)
-node3 = Node(3,node6,node7)
-node2 = Node(2,node4,node5)
-root = Node(1,node2,node3)
+root = Node(1,Node(2,Node(4),Node(5)),Node(3,Node(6),Node(7)))
 
 expectedNode7 = Node(7)
 expectedNode6 = Node(6,None,None,expectedNode7)

@@ -8,7 +8,7 @@ class Solution(object):
         if node is None:
             return
 
-        if dict.get(depth) is None:
+        if depth not in dict:
             dict[depth] = node
         else:
             node.next = dict[depth]
