@@ -1,0 +1,5 @@
+﻿I just need to store the prev char and a counter for it
+If the current char is euqla the prev char, increment the counter
+If it's not equal, reset the counter and store the current char
+
+Recursive function is not the best here because it would increase the space complexity
