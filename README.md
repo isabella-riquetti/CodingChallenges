@@ -1,4 +1,4 @@
-# CrakingTheCodeInterview
+# CodingChallenges
 
 ![Build and tests](https://github.com/isabella-riquetti/CrackingTheCodingInterview/actions/workflows/main.yml/badge.svg)
 
