@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="AlgoExpert\0Easy\" />
+    <Folder Include="AlgoExpert\3VeryHard\" />
+  </ItemGroup>
+
 </Project>

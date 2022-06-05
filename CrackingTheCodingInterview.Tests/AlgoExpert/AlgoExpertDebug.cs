@@ -1,6 +1,5 @@
 ﻿using CrackingTheCodingInterview.AlgoExpert;
 using Xunit;
-using static CrackingTheCodingInterview.AlgoExpert.Hard1ShiftLinkedList;
 
 namespace CrakingTheCodeInterview.Test.AlgoExpert
 {
@@ -10,15 +9,8 @@ namespace CrakingTheCodeInterview.Test.AlgoExpert
         // Just to debug, I can use AlgoExpert platform to test
         public void Medium1RiverSizesDebug()
         {
-            var matrix = new int[5, 5]
-            {
-                { 1,0,0,1,1 },
-                { 1,0,0,1,1 },
-                { 0,1,1,0,1 },
-                { 1,0,1,1,1 },
-                { 0,0,0,1,0 },
-            };
-            var result = Medium1RiverSizes.RiverSizes(matrix);
+            var words = new string[] { "this", "that", "did", "dead", "them!", "a" };
+            var result = MinimumCharactersForWord.Solution1(words);
 
             Assert.Equal(result, result);
         }
@@ -42,7 +34,7 @@ namespace CrakingTheCodeInterview.Test.AlgoExpert
             linkedList1.next = linkedList2;
             var linkedList0 = new LinkedList(0);
             linkedList0.next = linkedList1;
-            var result = Hard1ShiftLinkedList.ShiftLinkedList(linkedList0, k);
+            var result = CrackingTheCodingInterview.AlgoExpert.ShiftLinkedList.ShiftLinkedList(linkedList0, k);
 
             Assert.Equal(resultValue, result.value);
         }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace CrackingTheCodingInterview.AlgoExpert
+namespace CrackingTheCodingInterview.AlgoExpert.Medium
 {
     public static class Medium1RiverSizes
     {
@@ -15,7 +11,7 @@ namespace CrackingTheCodingInterview.AlgoExpert
             {
                 for (int y = 0; y < matrix.GetLength(1); y++)
                 {
-                    if(matrix[x,y] == 1)
+                    if (matrix[x, y] == 1)
                     {
                         Stack<(int x, int y, Direction currentDirection)> path = new Stack<(int x, int y, Direction currentDirection)>();
                         path.Push((x, y, 0));
@@ -31,7 +27,7 @@ namespace CrackingTheCodingInterview.AlgoExpert
 
         private static int CheckSurroundings(int[,] matrix, Stack<(int x, int y, Direction currentDirection)> path, int currentSize)
         {
-            if(path.Count == 0) // End river
+            if (path.Count == 0) // End river
             {
                 return currentSize;
             }
@@ -51,7 +47,7 @@ namespace CrackingTheCodingInterview.AlgoExpert
             else if (currentPath.currentDirection == Direction.Up)
                 nextNode = (currentPath.x - 1, currentPath.y);
 
-            if(nextNode.x < matrix.GetLength(0)
+            if (nextNode.x < matrix.GetLength(0)
                 && nextNode.x >= 0
                 && nextNode.y < matrix.GetLength(1)
                 && nextNode.y >= 0
