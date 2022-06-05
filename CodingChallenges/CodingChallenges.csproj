@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AlgoExpert\0Easy\" />
-    <Folder Include="AlgoExpert\3VeryHard\" />
+    <Folder Include="AlgoExpert\L3VeryHard\" />
   </ItemGroup>
 
 </Project>

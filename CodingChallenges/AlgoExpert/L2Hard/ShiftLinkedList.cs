@@ -2,9 +2,9 @@
 
 namespace CodingChallenges.CrakingTheCodingInterviewAlgoExpert.Hard
 {
-    public static class Hard1ShiftLinkedList
+    public static class ShiftLinkedList
     {
-        public static LinkedList ShiftLinkedList(LinkedList head, int k)
+        public static LinkedList Solution1(LinkedList head, int k)
         {
             int n = 1;
             LinkedList curr = head;

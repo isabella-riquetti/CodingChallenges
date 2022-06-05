@@ -1,5 +1,4 @@
-﻿using CodingChallenges.CrakingTheCodingInterviewAlgoExpert;
-using CodingChallenges.CrakingTheCodingInterviewAlgoExpert.Medium;
+﻿using CodingChallenges.CrakingTheCodingInterviewAlgoExpert.Medium;
 using Xunit;
 namespace CodingChallenges.Test.CrakingTheCodingInterview.AlgoExpert
 {

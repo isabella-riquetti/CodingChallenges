@@ -2,9 +2,9 @@
 
 namespace CodingChallenges.CrakingTheCodingInterviewAlgoExpert.Medium
 {
-    public static class Medium1RiverSizes
+    public static class RiverSizes
     {
-        public static List<int> RiverSizes(int[,] matrix)
+        public static List<int> Solution1(int[,] matrix)
         {
             List<int> sizes = new List<int>();
             for (int x = 0; x < matrix.GetLength(0); x++)
