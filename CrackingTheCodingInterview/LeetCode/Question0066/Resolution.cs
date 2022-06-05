@@ -9,7 +9,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0066
         {
             var list = new List<int>();
             int pendingIncrement = 1;
-            for(int i = digits.Length-1; i >= 0; i--)
+            for (int i = digits.Length - 1; i >= 0; i--)
             {
                 int num = digits[i] + pendingIncrement;
                 if (num == 10)
@@ -49,10 +49,10 @@ namespace CrackingTheCodingInterview.LeetCode.Question0066
 
             if (pendingIncrement == 1)
             {
-                Array.Resize(ref digits, digits.Length+1);
+                Array.Resize(ref digits, digits.Length + 1);
                 digits[0] = 1;
             }
-            
+
             return digits;
         }
     }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace CrackingTheCodingInterview.Chapter01ArraysAndStrings.Question07
 {
@@ -11,14 +10,14 @@ namespace CrackingTheCodingInterview.Chapter01ArraysAndStrings.Question07
         {
             int size = matrix.GetLength(0) - 1;
 
-            for (int x = 0; x <= size/2; x++)
+            for (int x = 0; x <= size / 2; x++)
             {
-                for (int y = x; y < size-x; y++)
+                for (int y = x; y < size - x; y++)
                 {
                     Rotate(matrix, matrix[x, y], x, y, size, 0);
                 }
             }
-            
+
             return matrix;
         }
 

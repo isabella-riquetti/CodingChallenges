@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace CrackingTheCodingInterview.LeetCode.Question0042
 {
@@ -33,7 +32,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0042
                     int j = i - 1;
                     while (j >= 0 && height[j] < height[i])
                     {
-                        
+
                         newPit.Size += height[i] - height[j];
                         newPit.Width++;
 

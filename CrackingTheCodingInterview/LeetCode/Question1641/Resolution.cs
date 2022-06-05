@@ -25,7 +25,7 @@
 
         public static int Solution2(int n)
         {
-            int[] sums = new int[5] { 1,1,1,1,1};
+            int[] sums = new int[5] { 1, 1, 1, 1, 1 };
             while (--n > 0)
             {
                 sums[3] += sums[4];

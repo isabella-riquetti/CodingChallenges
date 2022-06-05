@@ -14,7 +14,7 @@ namespace CrackingTheCodingInterview.Tests.Chapter01ArraysAndStrings
 
             Assert.Equal(test.ExpecteResult, result);
         }
-        
+
         [Theory]
         [MemberData(nameof(RotateMatrixTests2))]
         public void Solution2(PermutationsNoRepetitionsTestInput test)

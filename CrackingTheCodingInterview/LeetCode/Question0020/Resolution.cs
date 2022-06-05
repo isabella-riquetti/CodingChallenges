@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace CrackingTheCodingInterview.LeetCode.Question0020
 {
@@ -11,9 +10,9 @@ namespace CrackingTheCodingInterview.LeetCode.Question0020
             {']','[' },
             {'}','{' }
         };
-        
+
         public static bool Solution1(string parenthesis)
-            {
+        {
             var stack = new Stack<char>();
             foreach (var item in parenthesis)
             {
@@ -31,7 +30,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0020
                     }
                 }
             }
-        
+
             return stack.Count == 0;
         }
     }

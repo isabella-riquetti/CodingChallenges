@@ -10,7 +10,7 @@ namespace CrakingTheCodeInterview.Test.LeetCode
         public void Solution1(CountSortedVowelStringsTestInput test)
         {
             var result = CrackingTheCodingInterview.LeetCode.Question1641.Resolution.Solution1(test.Value);
-            
+
             Assert.Equal(test.ExpecteResult, result);
         }
         [Theory]

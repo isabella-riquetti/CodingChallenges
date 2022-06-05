@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using FluentAssertions;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Xunit;
-using FluentAssertions;
 
 namespace CrakingTheCodeInterview.Test.LeetCode
 {

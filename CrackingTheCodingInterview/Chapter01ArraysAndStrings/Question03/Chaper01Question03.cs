@@ -73,11 +73,11 @@ namespace CrackingTheCodingInterview.Chapter01ArraysAndStrings.Question03
                 if (text[i] == ' ')
                     spaceCount++;
 
-            char[] chars = new char[text.Length+(2*spaceCount)];
+            char[] chars = new char[text.Length + (2 * spaceCount)];
             int charPos = chars.Length - 1;
-            for (int i = text.Length-1; i >= 0; i--)
+            for (int i = text.Length - 1; i >= 0; i--)
             {
-                if(text[i] == ' ')
+                if (text[i] == ' ')
                 {
                     chars[charPos] = '0';
                     chars[--charPos] = '2';

@@ -14,7 +14,7 @@ namespace CrakingTheCodeInterview.Test.LeetCode
 
             result.Should().BeEquivalentTo(test.ExpecteResult);
         }
-        
+
         [Theory]
         [MemberData(nameof(PlusOneTests))]
         public void Solution2(PlusOneTestInput test)

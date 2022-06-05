@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace CrackingTheCodingInterview.LeetCode.Question0140
 {
@@ -16,7 +15,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0140
         {
             if (index == s.Length)
             {
-                if(phrase.Replace(" ","").Length == s.Length)
+                if (phrase.Replace(" ", "").Length == s.Length)
                     result.Add(phrase.Trim());
 
                 return;
@@ -30,7 +29,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0140
             }
 
             GetValidWords(s, words, result, index, phrase, currentString);
-            
+
         }
     }
 }

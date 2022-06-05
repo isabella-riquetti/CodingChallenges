@@ -49,7 +49,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0212
             for (int i = 0; i < words.Count; i++)
             {
                 if (words[i][index] == board[row][col] && !results.Contains(words[i]))
-                {                    
+                {
                     if (words[i].Length != index + 1)
                     {
                         usedPositions.Add(row + ":" + col);

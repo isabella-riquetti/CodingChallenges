@@ -25,7 +25,7 @@ namespace CrackingTheCodingInterview.Tests.Chapter01ArraysAndStrings
 
             Assert.Equal(test.ExpectedResult, result);
         }
-                
+
         [Theory]
         [MemberData(nameof(OnlyUniqueCharactersTests))]
         public void Solution3BruteForceNoAdditionalDataStructureTest(OnlyUniqueCharactersTestInput test)

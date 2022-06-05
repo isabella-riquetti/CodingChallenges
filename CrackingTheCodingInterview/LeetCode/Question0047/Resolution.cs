@@ -37,7 +37,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0047
                 }
             }
         }
-        
+
         public static IList<IList<int>> Solution2(int[] nums)
         {
             var result = new List<IList<int>>();

@@ -34,7 +34,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0278
 
             return -1;
         }
-        
+
         private static bool IsBadVersion(int n, int firstBad)
         {
             return n >= firstBad;

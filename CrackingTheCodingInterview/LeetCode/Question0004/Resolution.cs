@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace CrackingTheCodingInterview.LeetCode.Question0004
 {
@@ -10,14 +9,14 @@ namespace CrackingTheCodingInterview.LeetCode.Question0004
             if (nums1.Length == 0 && nums2.Length == 0)
                 return 0;
 
-            var totalLength = nums1.Length + nums2.Length-1;
+            var totalLength = nums1.Length + nums2.Length - 1;
             var medianPos = totalLength / 2.0;
 
             int pos1 = 0;
             int pos2 = 0;
             var totalPos = 0.0;
             int middle = 0;
-            while (totalPos <= Math.Ceiling(medianPos) )
+            while (totalPos <= Math.Ceiling(medianPos))
             {
                 int currentNum = 0;
 
@@ -26,7 +25,7 @@ namespace CrackingTheCodingInterview.LeetCode.Question0004
                     currentNum = nums1[pos1];
                     pos1++;
                 }
-                else if(pos2 < nums2.Length)
+                else if (pos2 < nums2.Length)
                 {
                     currentNum = nums2[pos2];
                     pos2++;
