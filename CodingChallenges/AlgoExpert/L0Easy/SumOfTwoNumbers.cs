@@ -47,7 +47,7 @@ namespace CodingChallenges.CrakingTheCodingInterviewAlgoExpert.Easy
         
         // Time: O(n)
         // Space: O(1)
-        public static int[] TwoNumberSum(int[] array, int targetSum)
+        public static int[] Solution3(int[] array, int targetSum)
         {
             Array.Sort(array);
             int left = 0;
